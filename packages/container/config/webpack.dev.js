@@ -28,9 +28,5 @@ const devConfig = {
 module.exports = merge(commonConfig, devConfig)
 
 
-// https://dnschecker.org/credit-card-generator.php
-// Visa Validate
-// 4127 7671 7927 7128
-// CVV / CVV2 770 Good thru 8 / 2023
-// Alexis Edwards
+
 
