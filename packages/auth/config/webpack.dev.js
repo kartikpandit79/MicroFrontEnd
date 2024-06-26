@@ -7,15 +7,15 @@ const packageJson = require("../package.json");
 const devConfig = {
     mode: "development",
     devServer: {
-        port: 8081,
+        port: 8082,
         historyApiFallback: true
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: "marketing",
+            name: "auth",
             filename: "remoteEntry.js",
             exposes: {
-                "./MarketingIndex": "./src/bootstrap"
+                "./AuthIndex": "./src/bootstrap"
             },
             // shared: ["react", "react-dom"]
             shared: packageJson.dependencies,
