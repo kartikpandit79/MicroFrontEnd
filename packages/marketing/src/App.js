@@ -8,6 +8,7 @@ const generateClassName = createGenerateClassName({
     productionPrefix: "ma"
 })
 
+
 const App = ({ history }) => {
     return <div>
         <StylesProvider generateClassName={generateClassName} >
